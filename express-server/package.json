@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx puppeteer browsers install chrome && nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm run puppeteer && nodemon index.js",
+    "puppeteer": "npm explore puppeteer -- npm run install"
   },
   "author": "",
   "license": "ISC",
