@@ -7,6 +7,7 @@ async function fetchJavaScriptContent(req, res) {
   const browser = await puppeteer.launch({
     headless: 'true',
     // executablePath: 'google-chrome-stable',
+    executablePath: '/opt/render/project/src/express-server/.cache/puppeteer/chrome',
     args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu'],
     ignoreHTTPSErrors: true, dumpio: false, waitUntil: 'networkidle0'
   });
